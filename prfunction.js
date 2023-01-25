@@ -21,17 +21,17 @@ var artistQuote = document.getElementById("artist-quote").value;
     // press release template
    var pressRelease = `
 Press Release
-\n\n
+\n \n
 ${artistName} Announces the Release of ${albumName}.
-\n\n
+\n \n
 ${artistName}, an up-and-coming artist in the ${genre} scene, is excited to announce the release of their new album ${albumName} on ${releaseDate.toDateString()}. 
-\n\n
+\n \n
 ${artistName} says, "${artistQuote}"
-
+\n \n
 ${artistName} was inspired by ${inspiration} when creating ${albumName}.
-
+\n \n
 This release represents a significant step forward in ${artistName}'s career and is sure to be a hit with fans of ${genre} music.
-
+\n \n
 ${artistBio}
 
 `;
