@@ -1,0 +1,38 @@
+/* overall styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+
+/* header styling */
+header {
+    background-color: #1E90FF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* press release styling */
+#press-release {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+/* track list styling */
+#track-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* track styling */
+#track-list li {
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 18px;
+}
