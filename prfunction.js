@@ -10,9 +10,7 @@
     var artistName = document.getElementById("artist-name").value;
     var albumName = document.getElementById("album-name").value;
     var releaseDate = new Date(document.getElementById("release-date").value);
-    var recordLabel = document.getElementById("record-label").value;
     var genre = document.getElementById("genre").value;
-    var trackList = document.getElementById("track-list").value.split(', ');
     var artistBio = document.getElementById("artist-bio").value;
 var inspiration = document.getElementById("inspiration").value;
 var artistQuote = document.getElementById("artist-quote").value;
@@ -23,20 +21,19 @@ var artistQuote = document.getElementById("artist-quote").value;
     // press release template
    var pressRelease = `
 Press Release
-
-${artistName} Announces the Release of New Album ${albumName}
-
-${artistName}, an up-and-coming artist in the ${genre} scene, is excited to announce the release of their new album ${albumName} on ${releaseDate.toDateString()}. The album, which is being released under ${recordLabel}, features the following tracks:
-
-${trackList.map((track, index) => `${index + 1}. ${track}`).join('\n')}
-
+\n\n
+${artistName} Announces the Release of ${albumName}.
+\n\n
+${artistName}, an up-and-coming artist in the ${genre} scene, is excited to announce the release of their new album ${albumName} on ${releaseDate.toDateString()}. 
+\n\n
 ${artistName} says, "${artistQuote}"
 
 ${artistName} was inspired by ${inspiration} when creating ${albumName}.
 
+This release represents a significant step forward in ${artistName}'s career and is sure to be a hit with fans of ${genre} music.
+
 ${artistBio}
 
-This new album represents a significant step forward in ${artistName}'s career and is sure to be a hit with fans of ${genre} music.
 `;
 
 
